@@ -18,7 +18,7 @@ const Signup = () => {
         },
         body: JSON.stringify(credentials),
       });
-
+      
       if (response.ok) {
         navigate('/login');
       } else {

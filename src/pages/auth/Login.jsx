@@ -2,41 +2,47 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext.jsx';
-
 const Login = () => {
   const navigate = useNavigate();
-  const { dispatch } = useAuth();
   const [credentials, setCredentials] = useState({
     email: '',
     password: '',
   });
-
-  const handleLogin = async () => {
+  const { dispatch } = useAuth();
+  const handleLogin = async (e) => {
+    e.preventDefault(); // Prevent form submission reload
+  
     try {
-      // Perform login API call (using axios or fetch) to your backend
-      const response = await fetch('https://temp-server-sandcode.vercel.app/api/signup', {
+      console.log('Logging in...');
+      const response = await fetch('https://temp-server-sandcode.vercel.app/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(credentials),
       });
+      
+      if (!response.ok) {
+        // Handle non-successful response (like 400 or 500 errors)
+        console.error('Login failed:', response.statusText);
+        return;
+      }
+      console.log('Login successful');
 
       const data = await response.json();
+      console.log(data);
 
-      if (response.ok) {
-        const { user, token } = data;
-        dispatch({ type: 'LOGIN', payload: { user, token } });
-        navigate('/');
-      } else {
-        // Handle login error
-        console.error('Login failed');
-      }
+      const { email, token } = data;
+      const user = { email: email };
+      dispatch({ type: 'LOGIN', payload: { user, token } });
+      navigate('/');
+  
+      console.log('Login successful');
     } catch (error) {
+      // Handle network errors or exceptions
       console.error('Login error:', error);
     }
   };
-
   return (
     <div>
       <h2>Login</h2>
