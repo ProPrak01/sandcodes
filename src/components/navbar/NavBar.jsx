@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext.jsx";
-
+import ChatAI from "../chatTool/ChatAI.jsx";
 export default function NavBar() {
   const { state, dispatch } = useAuth();
   const navigate = useNavigate();
@@ -47,6 +47,9 @@ export default function NavBar() {
           </div>
         )}
       </div>
+        <div className="chat-container">
+          <ChatAI/>
+        </div>
     </header>
   );
 }

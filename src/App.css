@@ -25,7 +25,12 @@
   font-size: 2.5rem;
   font-weight:bolder;
   color: #333;
-
+}
+.chat-container{
+  position:"absolute";
+  top: "20%";
+  right: "20%";
+  z-index: 3;
 }
 .t{
   color: #f04;
@@ -38,6 +43,7 @@
 }
 .s{
   color: #f04;
+  
 }
 .console {
   font-size: 36px;
