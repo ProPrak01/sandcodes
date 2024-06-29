@@ -10,7 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@googlemaps/adv-markers-utils": "^1.2.4",
     "@react-google-maps/api": "^2.19.3",
+    "@vis.gl/react-google-maps": "^1.1.0",
+    "ol": "^9.2.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.24.0"

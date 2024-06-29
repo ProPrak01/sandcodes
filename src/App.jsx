@@ -1,25 +1,34 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Map from './components/Map';
-import SurvivalGuide from './components/survivalGuide';
-import Chat from './components/Chat';
-
-const App = () => {
+import './App.css';
+import NavBar from './components/navbar/NavBar';
+import HomePage from './pages/home/HomePage';
+import Footer from './components/Footer/Footer';
+import { Route ,Routes} from 'react-router-dom';
+import SafeZoneNavigator from './pages/SafeZoneNavigator/SafeZoneNavigator';
+import SurvivalGuide from './pages/SurvivalGuide/SurvivalGuide';
+import CommunityChat from './pages/CommunityChat/CommunityChat';
+import Login from './pages/auth/Login';
+import Signup from './pages/auth/SignUp';
+import { AuthProvider } from './context/AuthContext.jsx';
+import ProtectedRoute from './routes/ProtectedRoute';
+function App() {
   return (
-    <Router>
-      <div className='containter'>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/map" element={<Map />} />
-          <Route path="/survival-guide" element={<SurvivalGuide />} />
-          <Route path="/chat" element={<Chat />} />
-        </Routes>
-      </div>
-    </Router>
+    <div className="app">
+            <AuthProvider>
+     <NavBar/>
+     <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/safe-zone-navigator" element={<SafeZoneNavigator />} />
+        <Route path="/survival-guide" element={<SurvivalGuide />} />
+        <Route path="/community-chat" element={<ProtectedRoute element={<CommunityChat />} />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signUp" element={<Signup />} />
+      </Routes>
+
+     <Footer/>
+     </AuthProvider>
+    </div>
   );
-};
+}
 
 export default App;
