@@ -5,7 +5,7 @@ Youtube Video URL : https://youtu.be/ji_zT0MaRiw
 SpaceTec Console is a futuristic and sleek navigation app designed to help people in danger. It includes features like a Safe Zone Navigator, Survival Guide, and Community Chat.
 
 
-Deployement URL : sandcodesproject-proprak01s-projects.vercel.app
+Deployement URL : [sandcodesproject-proprak01s-projects.vercel.app](https://sandcodesproject-proprak01s-projects.vercel.app/)
 
 
 Backend URL: https://temp-server-sandcode.vercel.app
