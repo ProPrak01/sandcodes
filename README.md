@@ -16,7 +16,7 @@ Backend URL: https://temp-server-sandcode.vercel.app
 - **Safe Zone Navigator:** Displays safe zones on a map using Google Maps.
 - **Survival Guide:** Provides survival tips for users.
 - **Community Chat:** Allows users to chat and share information.
-- **lOGIN LOGOUT AUTH:** Allows users to login
+- **LOGIN LOGOUT AUTH:** Allows users to login
 
 ## Tech Stack
 
