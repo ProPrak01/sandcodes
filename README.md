@@ -1,8 +1,25 @@
-# React + Vite
+# SpaceTec Console
+Youtube Video URL : https://youtu.be/ji_zT0MaRiw
+SpaceTec Console is a futuristic and sleek navigation app designed to help people in danger. It includes features like a Safe Zone Navigator, Survival Guide, and Community Chat.
+Deployement URL : sandcodesproject-proprak01s-projects.vercel.app
+Backend URL: https://temp-server-sandcode.vercel.app
+## Features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- **Safe Zone Navigator:** Displays safe zones on a map using Google Maps.
+- **Survival Guide:** Provides survival tips for users.
+- **Community Chat:** Allows users to chat and share information.
+- **lOGIN LOGOUT AUTH:** Allows users to login
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend:**
+  - React (Vite)
+  - React Router
+  - @react-google-maps/api
+  -OpenMaps
+- **Backend:**
+  - Node.js
+  - Express.js
+  - MongoDB
+  - JWT for authentication
+ 
