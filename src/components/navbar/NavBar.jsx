@@ -39,9 +39,9 @@ export default function NavBar() {
       </div>
       <div className={`buttons ${isMenuOpen ? "open" : ""}`}>
        
-        <div className="chat-container-ai">
+        {/* <div className="chat-container-ai">
           <ChatAI />
-        </div>
+        </div> */}
         {state.isAuthenticated ? (
           <div style={{ display: "flex", gap: "2px" }}>
             <div className="login-button">{state.user.email}</div>
