@@ -1,7 +1,7 @@
 // Signup.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import './Auth.css';
 const Signup = () => {
   const navigate = useNavigate();
   const [credentials, setCredentials] = useState({
@@ -31,8 +31,8 @@ const Signup = () => {
   };
 
   return (
-    <div>
-      <h2>Signup</h2>
+    <div className='auth-container'>
+      <h2>SIGN UP</h2>
       <form onSubmit={handleSignup}>
         <input
           type="email"
@@ -48,7 +48,7 @@ const Signup = () => {
           placeholder="Password"
           required
         />
-        <button type="submit">Signup</button>
+        <button className='auth-button' type="submit">SIGN UP</button>
       </form>
     </div>
   );

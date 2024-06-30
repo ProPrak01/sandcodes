@@ -11,6 +11,7 @@ import Login from './pages/auth/Login';
 import Signup from './pages/auth/SignUp';
 import { AuthProvider } from './context/AuthContext.jsx';
 import ProtectedRoute from './routes/ProtectedRoute';
+import CustomCursor from './Custom/CustomCursor.jsx';
 function App() {
   return (
     <div className="app">
@@ -26,7 +27,7 @@ function App() {
       </Routes>
 
      <Footer/>
-     
+     <CustomCursor/>
      </AuthProvider>
     </div>
   );

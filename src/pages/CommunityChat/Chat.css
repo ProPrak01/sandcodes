@@ -1,0 +1,35 @@
+.chat-container{
+    width: 60%;
+    height: fit-content;
+    margin: 50px auto;
+    padding: 20px;
+    background: #b4b4b4;
+    border: 0.2vh solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+.sendbut{
+    padding: 1vh 4vh;
+    border: 0.2vh solid black;
+    background-color: #b4b4b4;
+    transition: 0.3s;
+}
+.sendbut:hover{
+    background-color: #707070;
+    box-shadow: 0.4vh 0.4vh black;
+    color: #ffffff;
+}
+.inputChat{
+    background-color: #928f8f;
+    color: #ffffff;
+}
+.msg{
+    width: 100%;
+    height: 4vh;
+    border: 1px solid;
+    text-align: left;
+    align-content: center;
+    padding: 0.5vh;
+    background-color: #dbdbdb;
+    margin-bottom: 0.6vh;
+}

@@ -1,17 +1,19 @@
-body {
+/* body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f2f5;
     margin: 0;
     padding: 0;
-  }
+  } */
   
-  .auth-container {
-    max-width: 400px;
+  .auth-container{
+    width: 60%;
+    height: fit-content;
     margin: 50px auto;
     padding: 20px;
-    background: #fff;
-    border-radius: 8px;
+    background: #b4b4b4;
+   border: 0.2vh solid black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
   }
   
   h2 {
@@ -34,9 +36,10 @@ body {
   }
   
   input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+   
+    padding: 1vh;
+    border: 0.2vh solid #555555;
+    margin: 2vh auto;
     font-size: 16px;
     width: 100%;
     box-sizing: border-box;
@@ -44,16 +47,17 @@ body {
   
   .auth-button {
     padding: 10px;
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 4px;
-    color: white;
+    background-color: #fa6969;
+    border: 0.2vh solid #333;
+    
+    color: rgb(0, 0, 0);
     font-size: 16px;
-    cursor: pointer;
+   
     transition: background-color 0.3s;
+    margin-bottom: 2vh;
   }
   
   .auth-button:hover {
-    background-color: #45a049;
+    background-color: #fe3232;
   }
   
