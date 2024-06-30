@@ -45,7 +45,14 @@ const SafeZoneNavigator = () => {
       const markers = [
         { longitude: -74.006, latitude: 40.7128, color: 'rgba(255, 0, 0, 0.5)' }, // New York City, red
         { longitude: -73.997, latitude: 40.7128, color: 'rgba(0, 255, 0, 0.5)' }, // Los Angeles, green
-        { longitude: -74.000, latitude: 40.7230, color: 'rgba(0, 0, 255, 0.5)' }, // London, blue
+        { longitude: -74.000, latitude: 40.7230, color: 'rgba(255, 0, 0, 0.5)' }, // London, blue
+        { longitude: -74.01, latitude: 40.7230, color: 'rgba(0, 255, 0, 0.5)' }, // London, blue
+        { longitude: -74.03, latitude: 40.7230, color: 'rgba(255, 0, 0, 0.5)' }, // London, blue
+        { longitude: -74.036, latitude: 40.7428, color: 'rgba(255, 0, 0, 0.5)' }, // New York City, red
+        { longitude: -73.937, latitude: 40.7428, color: 'rgba(0, 255, 0, 0.5)' }, // Los Angeles, green
+        { longitude: -74.030, latitude: 40.7430, color: 'rgba(255, 0, 0, 0.5)' }, // London, blue
+        { longitude: -74.03, latitude: 40.7430, color: 'rgba(0, 255, 0, 0.5)' }, // London, blue
+        { longitude: -74.03, latitude: 40.7430, color: 'rgba(255, 0, 0, 0.5)' }, // London, blue
       ];
 
       const features = markers.map(({ longitude, latitude, color }) => {
@@ -84,7 +91,9 @@ const SafeZoneNavigator = () => {
       </div>
 
       <div style={{ width: '20vw', height: '85vh', backgroundColor: 'grey' }}>
-        Infected Places!!
+        <h1>Indicators:</h1>
+        <h3>RED : UNSAFE</h3>
+        <h3>GREEN : SAFE</h3>
       </div>
     </div>
   );
