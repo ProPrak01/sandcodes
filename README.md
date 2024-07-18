@@ -1,4 +1,4 @@
-# SpaceTec Console   (WNNER !)
+# SpaceTec Console   (WINNER !)
 Youtube Video URL : https://youtu.be/ji_zT0MaRiw
 
 
